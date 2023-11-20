@@ -1,4 +1,7 @@
 # Task list for OBS
+#### ⭐️ Star the repo if you like it!
+#### Simple task list for the Browser Source in OBS.
+
 ## ⚡ Features
 - Quickly create / delete tasks
 - Select current task
