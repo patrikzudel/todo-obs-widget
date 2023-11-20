@@ -12,6 +12,11 @@
 $ npm install # or pnpm install or yarn install
 $ npm run dev
 ```
+- Create a `Browser source` in OBS
+- Add the `https://todo-obs-widget.vercel.app/` url
+- Resize and crop the `Add task` button using `Alt` while resizing
+- Right click your Browser Source and click `Interact`, this will allow you to add, select and delete tasks
+
 ## 🍀 Supporters
 
 **[!["Buy Me A Ramen"](https://raw.githubusercontent.com/patrikzudel/patrikzudel/main/ramen.png)](https://www.buymeacoffee.com/patrikzero)**
