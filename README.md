@@ -8,10 +8,6 @@
 
 ## 📖 How to use
 
-```bash
-$ npm install # or pnpm install or yarn install
-$ npm run dev
-```
 - Create a `Browser source` in OBS
 - Add the `https://todo-obs-widget.vercel.app/` url
 - Resize and crop the `Add task` button using `Alt` while resizing
@@ -31,7 +27,7 @@ $ npm run dev
 
 ```bash
 $ npm install # or pnpm install or yarn install
-$ npm run build
+$ npm run build # or 'npm run dev' if you only want to run it locally.
 ```
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
 
