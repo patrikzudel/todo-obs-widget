@@ -1,34 +1,37 @@
-## Usage
+# Task list for OBS
+## ⚡ Features
+- Quickly create / delete tasks
+- Select current task
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
-
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## 📖 How to use
 
 ```bash
 $ npm install # or pnpm install or yarn install
+$ npm run dev
 ```
+## 🍀 Supporters
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+**[!["Buy Me A Ramen"](https://raw.githubusercontent.com/patrikzudel/patrikzudel/main/ramen.png)](https://www.buymeacoffee.com/patrikzero)**
 
-## Available Scripts
+> If you like this project and would like to support me, feel free to buy me a ramen! 🍜🍜🍜
 
-In the project directory, you can run:
+> Or **Paypal:**
 
-### `npm run dev` or `npm start`
+**[!["Buy Me A Ramen"](https://raw.githubusercontent.com/patrikzudel/patrikzudel/main/ramenpaypal.png)](https://ko-fi.com/patrikzudel)**
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🖥️ Deployment
 
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
+```bash
+$ npm install # or pnpm install or yarn install
+$ npm run build
+```
 You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+
+## 📃 Stack
+- Typescript
+- Solid.js
+- Tailwind
+
+---
+
+💻❤🍲 by [Patrik Žúdel](https://twitter.com/PatrikZero)

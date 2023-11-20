@@ -2,7 +2,7 @@ import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 
 const App: Component = () => {
-  const [tasks, setTasks] = createSignal(["Task 1", "Task 2"]);
+  const [tasks, setTasks] = createSignal([]);
   const [currentTask, setCurrentTask] = createSignal("");
 
   function addTask(newTask) {
