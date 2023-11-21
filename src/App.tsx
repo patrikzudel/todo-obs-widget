@@ -46,7 +46,7 @@ const App: Component = () => {
             {(task, index) =>
               <li onClick={() => {
                 setCurrentTask(task)
-              }} class={'pl-4 rounded-md mb-1 hover:bg-white/20 transition-colors duration-200 cursor-pointer ' +
+              }} class={'pl-4 rounded-md mb-1 hover:bg-white/20 transition-colors duration-200 cursor-pointer break-words ' +
                 ((currentTask() === task) && 'bg-white/20')}>
                 <div class='group flex justify-between'>
                   {task}
