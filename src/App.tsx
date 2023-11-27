@@ -8,6 +8,9 @@ const App: Component = () => {
   const [parent, setEnabled] = createAutoAnimate()
 
   function addTask(newTask) {
+    if(tasks().length === 0){
+      setCurrentTask(newTask)
+    }
     setTasks((prevTasks) => [...prevTasks, newTask]);
   }
 
@@ -40,7 +43,7 @@ const App: Component = () => {
         </button>
       </div>
       <div class='bg-black/50 border-x-0 border-[#ABCAEB]/50  rounded-md text-blue-50/90 m-4 p-2 w-64'>
-        <h1 class='mx-1 text-xl border-b-2 border-blue-50/50'>Chapters</h1>
+        <h1 class='mx-1 text-xl border-b-2 border-blue-50/50 select-none'>Chapters</h1>
         <ul ref={parent} class='mt-2 ml-0'>
           <For each={tasks()}>
             {(task, index) =>
@@ -49,8 +52,14 @@ const App: Component = () => {
               }} class={'pl-4 rounded-md mb-1 hover:bg-white/20 transition-colors duration-200 cursor-pointer break-words ' +
                 ((currentTask() === task) && 'bg-white/20')}>
                 <div class='group flex justify-between'>
+                  <p class=' select-none'>
                   {task}
-                  <button onClick={() => { removeTask(index()) }} class=' opacity-0 group-hover:opacity-70 transition-opacity duration-100 bg-red-500 px-2 rounded-md'>X</button>
+                  </p>
+                  <button onClick={() => { removeTask(index()) }} class=' opacity-0 group-hover:opacity-70 transition-opacity duration-100 bg-red-500 px-2 rounded-md'>
+                    <p class=' select-none'>
+                      X
+                    </p>
+                    </button>
                 </div>
               </li>
             }</For>
